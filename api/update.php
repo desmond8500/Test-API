@@ -1,12 +1,18 @@
 <?php
-// Créer un objet utilisateur
-$user= R::dispense( 'users' );
+  include 'config.php';
+  $id = htmlspecialchars($_POST['id']);
 
-// Renseigner l'objet utilisateur
-$user->prenom = $_POST['prenom'];
-$user->nom    = $_POST['nom'];
+  // Récupérer l'utilisateur
+  $user = R::load( 'users', $id );
 
-// Enregistrer le contenu de l'ojet dans la base de donnée
-$id = R::store( $user );
+  // Modifier les valeurs
+  $user->prenom = $_POST['prenom'];
+  $user->nom    = $_POST['nom'];
+
+  // Sauvegarder
+  $id = R::store( $user );
+
+  // Redirection
+  header("Location: ../index.php");
 
  ?>
