@@ -1,5 +1,5 @@
 <?php
-  include 'config.php';
+  include '../config.php';
   $id = htmlspecialchars($_GET['id']);
 
   // Récupérer l'utilisateur
@@ -9,6 +9,6 @@
   R::trash( $user );
 
   // Redirection
-  header("Location: ../index.php");
+  header("Location: index.php");
 
  ?>

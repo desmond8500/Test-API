@@ -1,5 +1,5 @@
 <?php
-  include 'config.php';
+  include '../config.php';
   $id = htmlspecialchars($_POST['id']);
 
   // Récupérer l'utilisateur
@@ -13,6 +13,6 @@
   $id = R::store( $user );
 
   // Redirection
-  header("Location: ../index.php");
+  header("Location: index.php");
 
  ?>

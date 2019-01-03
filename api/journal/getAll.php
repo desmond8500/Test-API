@@ -1,4 +1,5 @@
-<?php
+<?php // récupérer ses entrées de journal
+include '../config.php';
 // Récupérer les données de la base
 $users = R::getAll( 'SELECT * FROM users' ); ?>
 

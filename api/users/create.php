@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../config.php';
 // Créer un objet utilisateur
 $user= R::dispense( 'users' );
 
@@ -11,6 +11,6 @@ $user->nom    = $_POST['nom'];
 $id = R::store( $user );
 
 // Redirection vers la page d'index
-header('location: ../index.php');
+header('location: index.php');
 
  ?>

@@ -1,4 +1,4 @@
 <?php
-require '../src/rb-sqlite.php';
-R::setup( 'sqlite:../src/baseTest.db' );
+  require '../rb-sqlite.php';
+  R::setup( 'sqlite:../baseTest.db' );
  ?>
