@@ -5,7 +5,7 @@
 
   if(!isset($_POST['prenom'])){?>
     <div class="container">
-      Ceci est une API test
+      Ceci est une API de gestion de journaux
 
       <form action="create.php" method="post" enctype="multipart/form-data" class="card">
         <div class="form-group">

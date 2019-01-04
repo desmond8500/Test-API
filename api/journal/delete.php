@@ -3,10 +3,10 @@
   $id = htmlspecialchars($_GET['id']);
 
   // Récupérer l'utilisateur
-  $user = R::load( 'journal', $id );
+  $journal= R::load( 'journal', $id );
 
   // Supprimer
-  R::trash( $user );
+  R::trash( $journal);
 
   // Redirection
   header("Location: index.php");

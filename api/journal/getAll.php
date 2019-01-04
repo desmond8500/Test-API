@@ -1,6 +1,6 @@
 <?php
 // Récupérer les données de la base
-$users = R::getAll( 'SELECT * FROM journal' ); ?>
+$journaux = R::getAll( 'SELECT * FROM journal' ); ?>
 
 <table class="table">
   <tr>
@@ -11,14 +11,14 @@ $users = R::getAll( 'SELECT * FROM journal' ); ?>
     <th>Editer</th>
     <th>Supprimer</th>
   </tr><?php
-  foreach ($users as $key => $user) {?>
+  foreach ($journaux as $key => $journal) {?>
     <tr>
-      <td><?php echo $user['id']; ?></td>
-      <td><?php echo $user['titre']; ?></td>
-      <td><?php echo $user['description']; ?></td>
-      <td><?php echo $user['date']; ?></td>
-      <td><a href="edit.php?id=<?php echo $user['id']; ?>">Modifier</a></td>
-      <td><a href="delete.php?id=<?php echo $user['id']; ?>">Supprimer</a></td>
+      <td><?php echo $journal['id']; ?></td>
+      <td><?php echo $journal['titre']; ?></td>
+      <td><?php echo $journal['description']; ?></td>
+      <td><?php echo $journal['date']; ?></td>
+      <td><a href="edit.php?id=<?php echo $journal['id']; ?>">Modifier</a></td>
+      <td><a href="delete.php?id=<?php echo $journal['id']; ?>">Supprimer</a></td>
     </tr> <?php
   }  ?>
 </table>

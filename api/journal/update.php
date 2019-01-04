@@ -3,14 +3,15 @@
   $id = htmlspecialchars($_POST['id']);
 
   // Récupérer l'utilisateur
-  $user = R::load( 'journal', $id );
+  $journal = R::load( 'journal', $id );
 
   // Modifier les valeurs
-  $user->prenom = $_POST['prenom'];
-  $user->nom    = $_POST['nom'];
+  $journal->titre         = $_POST['titre'];
+  $journal->date          = $_POST['date'];
+  $journal->description   = $_POST['description'];
 
   // Sauvegarder
-  $id = R::store( $user );
+  $id = R::store( $journal );
 
   // Redirection
   header("Location: index.php");

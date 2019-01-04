@@ -1,14 +1,14 @@
 <?php
 include '../config.php';
-// Créer un objet utilisateur
+// Créer un objet journal
 $journal= R::dispense( 'journal' );
 
-// Renseigner l'objet utilisateur
-$journal->titre = $_POST['titre'];
-$journal->date    = $_POST['date'];
-$journal->description    = $_POST['description'];
+// Renseigner l'objet journal
+$journal->titre         = $_POST['titre'];
+$journal->date          = $_POST['date'];
+$journal->description   = $_POST['description'];
 
-// Enregistrer le contenu de l'ojet dans la base de donnée
+// Enregistrer le contenu de l'objet dans la base de donnée
 $id = R::store( $journal );
 
 // Redirection vers la page d'index
