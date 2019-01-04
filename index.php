@@ -3,4 +3,5 @@
 <ol>
   <li><a href="api/users/index.php">Gestion d'utilisateurs</a></li>
   <li><a href="api/journal/index.php">Journal</a></li>
+  <li><a href="api/depenses/index.php">Dépenses</a></li>
 </ol>
