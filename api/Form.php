@@ -17,6 +17,15 @@ class Form{
        echo $test;?></textarea>
     </div><?php
   }
+  public static function select($name,$select){?>
+    <div class="form-group col-md-4">
+      <select id="<?php echo $name ?>" name="<?php echo $name ?>" class="form-control"><?php
+      foreach ($select as $key => $option) {?>
+        <option value="<?php echo $key ?>"><?php echo $option ?></option><?php
+      } ?>
+      </select>
+    </div><?php
+  }
   public static function submit($name="Valider"){?>
     <div class="form-group col-md-6">
       <button type="submit" class="btn btn-primary"><?php echo $name ?></button>
