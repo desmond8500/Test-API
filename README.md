@@ -1,8 +1,10 @@
-# Test API
+# Modèle API
 
 ## Description
- Cet API permet de faire un test des fonctions de bases d'une API à savoir le CRUD
+Cette plateforme regroupe un ensemble de codes
+
 
 ## Fonctionalités actuelles
-* Affichage de la liste des utilisateurs
-* CRUD
+* Gestion d'utilisateurs
+* Gestion de Dépenses
+* Gestion de journaux

@@ -6,13 +6,14 @@
 
   if(!isset($_POST['prenom'])){?>
     <div class="container">
-      <p>Ceci est une API de gestion de journaux</p>
+      Ceci est une API de gestion de dépenses
 
       <form action="create.php" method="post" enctype="multipart/form-data" class="card">
         <div class="form-row"><?php
-          Form::inputText('titre','Titre');
-          Form::inputText('date','jj/mm/aaaa', date('d/m/Y'));
-          Form::textarea('Description');
+          Form::inputText('objet','Objet');
+          Form::select('type',array('Entrée','Dépense'));
+          Form::inputText('montant','Montant');
+          Form::inputText('date','Date', date('d/m/Y'));
           Form::submit();
          ?>
       </form>
