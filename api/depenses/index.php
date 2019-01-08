@@ -13,7 +13,7 @@
           Form::inputText('objet','Objet');
           Form::select('type',array('Entrée','Dépense'));
           Form::inputText('montant','Montant');
-          Form::inputText('date','Date');
+          Form::inputText('date','Date', date('d/m/Y'));
           Form::submit();
          ?>
       </form>

@@ -11,7 +11,7 @@
       <form action="create.php" method="post" enctype="multipart/form-data" class="card">
         <div class="form-row"><?php
           Form::inputText('titre','Titre');
-          Form::inputText('date','jj/mm/aaaa');
+          Form::inputText('date', "Date", date('d/m/Y'));
           Form::textarea('Description');
           Form::submit();
          ?>
