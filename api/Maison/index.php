@@ -1,4 +1,15 @@
-<?php $maison =  htmlspecialchars($_GET['Maison']);
+
+<a href="contrat.php">Contrat</a><br>
+<a href="client_add.php">Ajouter un client</a><br>
+<a href="listeContrats.php">liste contrats</a><br>
+
+
+
+<?php
+
+
+/*
+$maison =  htmlspecialchars($_GET['Maison']);
 	if($maison == "Etat")
 		include "Sites/Maison/general.php";
 
@@ -32,13 +43,13 @@
 		include "Sites/Maison/recu.php";
 
 	elseif($maison == "Recu"){
-		include "Sites/Maison/print_recu.php";	
+		include "Sites/Maison/print_recu.php";
 
 	if(isset($_POST['nom']))
 			include "Sites/Maison/recu.php";
 
 	}
-
+*/
 
 
 ?>
