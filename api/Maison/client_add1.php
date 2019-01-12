@@ -1,7 +1,8 @@
 <?php
 include '../config.php';
+
 // Créer un objet utilisateur
-$client= R::dispense( 'location_clients' );
+$client= R::dispense( 'locclient' );
 
 // Renseigner l'objet utilisateur
 $client->titre      = htmlspecialchars($_POST['titre']);
@@ -16,6 +17,7 @@ $client->prix       = htmlspecialchars($_POST['prix']);
 $client->arrivee    = date("Y-m-d") ;
 $client->depart     = 0;
 
+//var_dump($client);
 // Enregistrer le contenu de l'ojet dans la base de donnée
 $id = R::store( $client );
 

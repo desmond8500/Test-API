@@ -1,7 +1,7 @@
 
-<a href="contrat.php">Contrat</a><br>
 <a href="client_add.php">Ajouter un client</a><br>
 <a href="listeContrats.php">liste contrats</a><br>
+<a href="ajout.php">Ajouter une dépense</a><br>
 
 
 

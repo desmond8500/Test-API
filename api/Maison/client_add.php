@@ -35,6 +35,11 @@
       </div>
 
       <div class="form-group">
+        <label for="nom">Contrat</label>
+      <input type="text" name="contrat" id="contrat" placeholder="Montant du contrat" class="form-control">
+      </div>
+
+      <div class="form-group">
         <label for="Telephone">Telephone</label>
       <input type="text" name="Telephone" id="Telephone" placeholder="Numéro de téléphne" class="form-control">
       </div>
@@ -55,10 +60,7 @@
         </select>
       </div>
 
-      <div class="form-group">
-        <label for="nom">Nom</label>
-      <input type="text" name="nom" id="nom" placeholder="Nom" class="form-control">
-      </div>
+
 
       <?php $date1 = date("Y-m-d"); ?>
 
