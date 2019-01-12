@@ -1,5 +1,5 @@
 <div class="container">
-  <?php include '../config.php'; ?>
+  <?php include '../0 base/config.php'; ?>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <div class="col-xs-12 col-md-4">
     <form action="Sites/Maison/ajout1.php" method="post" enctype="multipart/form-data">

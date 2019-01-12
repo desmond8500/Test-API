@@ -1,5 +1,5 @@
 <?php
-include '../config.php';
+include '../0 base/config.php';
 
 // Créer un objet utilisateur
 $client= R::dispense( 'locclient' );
@@ -22,6 +22,6 @@ $client->depart     = 0;
 $id = R::store( $client );
 
 // Redirection vers la page d'index
-header('location: index.php');
+//header('location: index.php');
 
  ?>

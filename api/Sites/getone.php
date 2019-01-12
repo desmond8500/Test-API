@@ -1,7 +1,7 @@
 <?php
 // Récupérer les données de la base
 $nom = 'Todoroki';
-$users =  R::getAll( 'SELECT * FROM users WHERE nom = :nom', [':nom' => $nom] );;
+$users =  R::getAll( 'SELECT * FROM users WHERE nom = :nom', [':nom' => $nom] );
 
 ?>
 <table class="table">
