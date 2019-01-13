@@ -14,3 +14,4 @@ Elle peut aussi être intégrée à des applications RESTfull.
 * [Afficher une citation](index.php?action=random)
 
 ## Requettes
+* [lister les citations en json](api/readALL.php)

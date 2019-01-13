@@ -1,6 +1,6 @@
 <?php
   include '../config.php';
-  $id = htmlspecialchars($_POST['id']);
-  $citation =  R::getAll( 'SELECT * FROM users WHERE id = :id', [':id' => $id] );;
+  $id = rand(1,R::count( 'citations'));
+  $citation = R::load('citations', $id);
   echo json_encode($citation);
 ?>
