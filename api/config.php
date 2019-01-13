@@ -1,6 +1,8 @@
 <?php
-  session_start();  
+  session_start();
   require '../rb-sqlite.php';
-  R::setup( 'sqlite:../baseTest.db' );
+  require "../Parsedown.php";
+  require "../Form.php";
+  R::setup( 'sqlite:../baseTest.db');
   date_default_timezone_set('Africa/Dakar');
  ?>
