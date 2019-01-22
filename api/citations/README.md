@@ -12,6 +12,7 @@ Elle peut aussi être intégrée à des applications RESTfull.
 * [Ajouter une citation](index.php?action=ajouter)
 * [Afficher les citations](index.php?action=lister)
 * [Afficher une citation](index.php?action=random)
+* [Editer base](index.php?action=setdb)
 
 ## Requettes
 * [lister les citations en json](api/readALL.php)

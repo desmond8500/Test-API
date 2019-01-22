@@ -21,7 +21,7 @@ class Form{
     <div class="form-group col-md-6">
       <select id="<?php echo $name ?>" name="<?php echo $name ?>" class="form-control"><?php
       foreach ($select as $key => $option) {?>
-        <option value="<?php echo $key ?>"><?php echo $option ?></option><?php
+        <option value="<?php echo $option ?>"><?php echo $option ?></option><?php
       } ?>
       </select>
     </div><?php
