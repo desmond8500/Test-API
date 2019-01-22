@@ -13,8 +13,6 @@
         include 'setDb.php';
       elseif($action=="random"){
         $test = file_get_contents('http://localhost/Dev/API/Generic/Test%20API/api/citations/api/readrandom.php');
-        var_dump($test);
-        // var_dump($response);
         $reponse = json_decode($test);
         ?>
         <blockquote class="blockquote">

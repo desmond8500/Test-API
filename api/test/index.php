@@ -34,7 +34,6 @@
   $pass ="frZ@45";
   R::setup( "mysql:host=$host;dbname=$base", $user, $pass );
   $test = R::getAll( 'SELECT * FROM citations' );
-  var_dump($test);
 
 
   ?>

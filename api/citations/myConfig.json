@@ -1,1 +1,1 @@
-{"sgbd":"mysql","sqlite":["filename"],"mysql":[{"hostname":"mysql-smi.alwaysdata.net","database":"smi_api","user":"smi_api","password":"frZ@45"}]}
+{"sgbd":"sqlite","sqlite":["filename"],"mysql":[{"hostname":"mysql-smi.alwaysdata.net","database":"smi_api","user":"smi_api","password":"frZ@45"}]}
