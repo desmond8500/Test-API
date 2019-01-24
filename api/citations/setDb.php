@@ -13,16 +13,10 @@
     $post = htmlentities($_POST['sgbd']);
     echo "$post";
 
-    if($post=="sqlite"){
-      $config->sgbd = $post;
-      $myconfig = json_encode($config);
-      file_put_contents('myConfig.json', $myconfig);
-    }
-    else{
-      $config->sgbd = $post;
-      $myconfig = json_encode($config);
-      file_put_contents('myConfig.json', $myconfig);
-    }
+    $config->sgbd = $post;
+    $myconfig = json_encode($config);
+    file_put_contents('myConfig.json', $myconfig);
+
     header("location: index.php");
   }
-  ?>
+?>

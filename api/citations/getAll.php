@@ -16,7 +16,7 @@ $citations = R::findAll( 'citations' ); ?>
       <td><?php echo $citation['citation']; ?></td>
       <td><?php echo $citation['auteur']; ?></td>
       <td><a href="edit.php?id=<?php echo $citation['id']; ?>">Modifier</a></td>
-      <td><a href="delete.php?id=<?php echo $citation['id']; ?>">Supprimer</a></td>
+      <td><a href="api/delete.php?id=<?php echo $citation['id']; ?>">Supprimer</a></td>
     </tr> <?php
   }  ?>
 </table>

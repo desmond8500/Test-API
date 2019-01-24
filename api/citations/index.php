@@ -11,6 +11,15 @@
         include 'getAll.php';
       elseif($action=="setdb")
         include 'setDb.php';
+      elseif($action=="upload")
+        include 'transfert.php';
+      elseif($action=="download")
+        include 'download.php';
+      elseif($action=="save"){
+        $citations = R::findall( 'citations' );
+        $list = json_encode($citations);
+        file_put_contents('saveme.json',$list);
+      }
       elseif($action=="random"){
         $test = file_get_contents('http://localhost/Dev/API/Generic/Test%20API/api/citations/api/readrandom.php');
         $reponse = json_decode($test);
