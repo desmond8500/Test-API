@@ -1,0 +1,15 @@
+{
+  "sgbd": "sqlite",
+
+  "sqlite": "sqlite"
+    [
+      "filename":"",
+    ],
+  "mysql":
+    [
+      "hostname": "",
+      "database": "",
+      "user": "",
+      "password": "",
+    ]
+}

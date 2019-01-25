@@ -2,16 +2,16 @@
   include '../../nav.php';
   require '../rb-sqlite.php';
   require '../Form.php';
-  R::setup( 'sqlite:../baseTest.db' );
+  R::setup( 'sqlite:../baseTest.db' ); ?>
 
-  if(!isset($_POST['prenom'])){?>
+
     <div class="container">
-      <p>Ceci est une API de gestion de journaux</p>
+      <p>Ceci est une API de gestion de sites interessants</p>
 
       <form action="create.php" method="post" enctype="multipart/form-data" class="card">
         <div class="form-row"><?php
-          Form::inputText('titre','Titre');
-          Form::inputText('date','jj/mm/aaaa');
+          Form::inputText('nom','Nom');
+          Form::inputText('lien','Lien');
           Form::textarea('Description');
           Form::submit();
          ?>
@@ -20,11 +20,4 @@
       <div class="card"><?php
         include 'getAll.php' ?>
       </div>
-    </div><?php
-  }
-
-  else{
-    if(isset($_POST['prenom'])){
-      var_dump($_POST);
-    }
-  } ?>
+    </div>

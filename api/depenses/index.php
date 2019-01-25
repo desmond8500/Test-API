@@ -1,6 +1,7 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<a href="../../">Acceuil</a> <br><br><?php
+<?php
+  include '../../nav.php';
   require '../rb-sqlite.php';
+  require '../Form.php';
   R::setup( 'sqlite:../baseTest.db' );
 
   if(!isset($_POST['prenom'])){?>
@@ -8,13 +9,13 @@
       Ceci est une API de gestion de dépenses
 
       <form action="create.php" method="post" enctype="multipart/form-data" class="card">
-        <div class="form-group">
-          <input class="for-control" type="text" id="objet" name="objet" placeholder="Objet">
-          <input class="for-control" type="text" id="type" name="type" placeholder="Type">
-          <input class="for-control" type="text" id="montant" name="montant" placeholder="Montant">
-          <input class="for-control" type="text" id="date" name="date" placeholder="date">
-          <input type="submit" value="Valider">
-        </div>
+        <div class="form-row"><?php
+          Form::inputText('objet','Objet');
+          Form::select('type',array('Entrée','Dépense'));
+          Form::inputText('montant','Montant');
+          Form::inputText('date','Date');
+          Form::submit();
+         ?>
       </form>
 
       <div class="card"><?php
