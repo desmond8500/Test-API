@@ -1,7 +1,7 @@
 <?php
-// Récupérer les données de la base
-$citations = R::getAll( 'SELECT * FROM citations' ); ?>
 
+$citations = R::findAll( 'citations' ); ?>
+<a href=".">Retour</a> <hr>
 <table class="table">
   <tr>
     <th width:"10px">#</th>
@@ -16,7 +16,9 @@ $citations = R::getAll( 'SELECT * FROM citations' ); ?>
       <td><?php echo $citation['citation']; ?></td>
       <td><?php echo $citation['auteur']; ?></td>
       <td><a href="edit.php?id=<?php echo $citation['id']; ?>">Modifier</a></td>
-      <td><a href="delete.php?id=<?php echo $citation['id']; ?>">Supprimer</a></td>
+      <td><a href="api/delete.php?id=<?php echo $citation['id']; ?>">Supprimer</a></td>
     </tr> <?php
   }  ?>
 </table>
+<hr>
+<a href=".">Retour</a>
